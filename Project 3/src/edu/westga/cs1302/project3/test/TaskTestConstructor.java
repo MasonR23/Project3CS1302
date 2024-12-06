@@ -11,13 +11,13 @@ class TaskTestConstructor {
 	@Test
 	void testWhenNameIsNull() {
 		 assertThrows(IllegalArgumentException.class,
-		            ()->{ Task rahhhh = new Task(null, "Something should go here"); });
+		            ()->{ new Task(null, "Something should go here"); });
 	}
 	
 	@Test
 	void testWhenDescriptionIsNull() {
 		 assertThrows(IllegalArgumentException.class,
-		            ()->{ Task rahhhh = new Task("Something should go here", null ); });
+		            ()->{ new Task("Something should go here", null ); });
 	}
 
 }
